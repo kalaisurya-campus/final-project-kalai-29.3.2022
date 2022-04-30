@@ -3,11 +3,9 @@ import { useLocation } from "react-router";
 import { Data } from "./PostData";
 
 function KalaiPost(props) {
-    const loaction = useLocation();
-    // console.log("lll", loaction);
-    const path = loaction.pathname.split("/")[3];
-    const posts = Data.find((p) => p.id.toString() === path);
-    console.log(loaction);
+    console.log("uses", useLocation);
+    const path = useLocation.pathname.split("/")[2];
+    const posts = Data.find((p) => p.id=== path);
     return (
         <div>
             <span>{posts.id}</span>

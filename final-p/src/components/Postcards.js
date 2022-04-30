@@ -7,7 +7,7 @@ function Postcards({ post }) {
 
     return (
         <div>
-            <Link to={`/post/${post.id}`}>
+            <Link to={`/post/${post.id}/`}>
                 <span>{post.id}</span>
                 <p>
                     <img src={post.image} />

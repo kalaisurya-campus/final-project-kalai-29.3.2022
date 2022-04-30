@@ -12,6 +12,6 @@
     height: auto;
     @include themed() {
         background: t($background);
-        color:white;
+        color: t($color);
     }
 }

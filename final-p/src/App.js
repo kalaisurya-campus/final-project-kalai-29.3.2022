@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import "./App.scss";
+import Formvalidation from "./components/Formvalidation";
 import Home from "./components/Home";
 import KalaiPost from "./components/KalaiPost";
 import LOgin from "./components/LOgin";
@@ -23,12 +24,20 @@ function App() {
         localStorage.setItem("darkthemeset", JSON.stringify(darkcolor));
     }, [darkcolor]);
 
-    const user = false;
+    const user = true;
 
     return (
         <div className={darkcolor ? "theme--dark" : "theme--light"}>
-            <button onClick={() => SetDarkColor(!darkcolor)} style={{border:"none",outline:"none",padding:"20px",borderRadius:"50%"}}>
-              {darkcolor?"darkcolor":"whitecolor"}
+            <button
+                onClick={() => SetDarkColor(!darkcolor)}
+                style={{
+                    border: "none",
+                    outline: "none",
+                    padding: "20px",
+                    borderRadius: "50%",
+                }}
+            >
+                {darkcolor ? "darkcolor" : "whitecolor"}
             </button>
             <div className="inside-app">
                 <Navbar user={user} />
@@ -48,6 +57,7 @@ function App() {
                             }
                             // component={KalaiPost}
                         />
+                        <Route path="/form" component={Formvalidation}/>
                     </Switch>
                 </Router>
             </div>

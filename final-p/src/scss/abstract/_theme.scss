@@ -1,13 +1,16 @@
 @use "variables" as *;
 $primaryColor: "primaryColor";
 $background: "background";
+$color:'color';
 $themes: (
     light: (
         primaryColor: $primaryColor--light,
         background: $background--light,
+        color: $black-text--light,
     ),
     dark: (
         primaryColor: $primaryColor--dark,
         background: $background--dark,
+        color: $black-text--dark,
     ),
 );

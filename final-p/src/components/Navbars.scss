@@ -1,0 +1,29 @@
+.inside_navbar {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    overflow: hidden;
+}
+.main-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+ul li {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+.img1 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}

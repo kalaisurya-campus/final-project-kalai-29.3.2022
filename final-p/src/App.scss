@@ -1,0 +1,17 @@
+@use "scss" as *;
+
+.transistion *,
+.transistion *:before,
+.transistion *:after {
+    transition: all 500ms !important;
+    transition-delay: 0 !important;
+}
+
+.inside-app {
+    width: 100%;
+    height: auto;
+    @include themed() {
+        background: t($background);
+        color:white;
+    }
+}

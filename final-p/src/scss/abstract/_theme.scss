@@ -1,7 +1,7 @@
 @use "variables" as *;
 $primaryColor: "primaryColor";
 $background: "background";
-$color:'color';
+$color: "color";
 $themes: (
     light: (
         primaryColor: $primaryColor--light,

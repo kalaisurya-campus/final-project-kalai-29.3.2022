@@ -9,7 +9,7 @@ function Home(props) {
     return (
         <div>
             <h1>{data.name}</h1>
-            {data.tests.length===0 && <div>No Data Found Function</div>}
+            {data.tests.length === 0 && <div>No Data Found Function</div>}
             {data.tests.map((item, index) => {
                 return (
                     <div key={index}>

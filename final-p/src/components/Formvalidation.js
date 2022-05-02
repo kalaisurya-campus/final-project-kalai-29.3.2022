@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Count from "./Count";
+import NewFormData from "./NewFormData";
 const schema = yup
     .object({
         username: yup.string().required(),
@@ -9,12 +11,13 @@ const schema = yup
         password: yup.string().required(),
     })
     .required();
-function Formvalidation(props) {
+function Formvalidation() {
     const [names, SetNames] = useState({
         username: "",
         email: "",
         password: "",
     });
+
     const {
         register,
         handleSubmit,
@@ -34,10 +37,16 @@ function Formvalidation(props) {
     };
     return (
         <div>
+            <Count />
+            <NewFormData/>
             <form onSubmit={handleSubmit(submits)}>
                 <label>Name</label>
                 <input
-                    {...register("username", { required: true, maxLength: 20,pattern: /^[A-Za-z0-9]+$/i})}
+                    {...register("username", {
+                        required: true,
+                        maxLength: 20,
+                        pattern: /^[A-Za-z0-9]+$/i,
+                    })}
                     type="text"
                     placeholder="Entre the username"
                     name="username"

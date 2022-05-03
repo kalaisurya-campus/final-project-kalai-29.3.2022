@@ -14,6 +14,7 @@ import Home from "./components/Home";
 import KalaiPost from "./components/KalaiPost";
 import LOgin from "./components/LOgin";
 import Navbar from "./components/Navbar";
+import NewNvabrs from "./components/NewNavbars/NewNvabrs";
 
 function App() {
     const getcolorset = () => {
@@ -28,7 +29,7 @@ function App() {
 
     return (
         <div className={darkcolor ? "theme--dark" : "theme--light"}>
-            <button
+            {/* <button
                 onClick={() => SetDarkColor(!darkcolor)}
                 style={{
                     border: "none",
@@ -38,9 +39,10 @@ function App() {
                 }}
             >
                 {darkcolor ? "darkcolor" : "whitecolor"}
-            </button>
+            </button> */}
             <div className="inside-app">
-                <Navbar user={user} />
+                {/* <Navbar user={user} /> */}
+                <NewNvabrs/>
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home} />
@@ -50,6 +52,7 @@ function App() {
                                 user ? <Redirect to="/" /> : <LOgin />
                             }
                         />
+                        <Route path="/navs" component={NewNvabrs} />
                         <Route
                             path="/post/:id"
                             render={() =>
@@ -57,7 +60,7 @@ function App() {
                             }
                             // component={KalaiPost}
                         />
-                        <Route path="/form" component={Formvalidation}/>
+                        <Route path="/form" component={Formvalidation} />
                     </Switch>
                 </Router>
             </div>

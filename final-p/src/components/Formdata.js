@@ -1,14 +1,14 @@
 const Formdata = [
     {
         username: "",
-        name:"username",
+        name: "username",
         label: "Usrename",
         type: "text",
         placeholder: "Enter Your Username",
     },
     {
         email: "",
-        name:"email",
+        name: "email",
         label: "email",
         type: "email",
         placeholder: "Enter Your email",
@@ -16,7 +16,7 @@ const Formdata = [
     {
         password: "",
         label: "password",
-        name:"password",
+        name: "password",
         type: "password",
         placeholder: "Enter Your password",
     },

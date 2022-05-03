@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Count from "./Count";
-import NewFormData from "./NewFormData";
+import ReadMoreDatasbutton from "./ReadMoreDatasbutton";
+
 const schema = yup
     .object({
         username: yup.string().required(),
@@ -38,7 +39,7 @@ function Formvalidation() {
     return (
         <div>
             <Count />
-            <NewFormData/>
+            <ReadMoreDatasbutton />
             <form onSubmit={handleSubmit(submits)}>
                 <label>Name</label>
                 <input

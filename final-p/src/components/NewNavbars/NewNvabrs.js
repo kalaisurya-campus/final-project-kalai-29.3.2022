@@ -13,7 +13,7 @@ function NewNvabrs(props) {
 
     window.addEventListener("scroll", chageColorBack);
     return (
-        <div className={slots?"navbars-newslist active":"navbars-newslist"}>
+        <div className={slots ? "navbars-newslist active" : "navbars-newslist"}>
             <div className="lists">
                 <div className="klais">kalaisurya</div>
                 <div className="insides">

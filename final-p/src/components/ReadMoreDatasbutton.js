@@ -48,7 +48,7 @@ function ReadMoreDatasbutton(props) {
     let NmaeUser = "";
     const getName = () => {
         userefone.current.style.border = "2px solid red";
-        userefone.current.style.borderRadius="10px"
+        userefone.current.style.borderRadius = "10px";
         return false;
     };
     console.log("receive", NmaeUser[0]);

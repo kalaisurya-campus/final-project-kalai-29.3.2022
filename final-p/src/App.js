@@ -15,6 +15,8 @@ import KalaiPost from "./components/KalaiPost";
 import LOgin from "./components/LOgin";
 import Navbar from "./components/Navbar";
 import NewNvabrs from "./components/NewNavbars/NewNvabrs";
+import Starts from "./components/Stars/Starts";
+import Tabsactive from "./components/tabsactive/Tabsactive";
 
 function App() {
     const getcolorset = () => {
@@ -42,7 +44,7 @@ function App() {
             </button> */}
             <div className="inside-app">
                 {/* <Navbar user={user} /> */}
-                <NewNvabrs/>
+                <NewNvabrs />
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home} />
@@ -61,6 +63,8 @@ function App() {
                             // component={KalaiPost}
                         />
                         <Route path="/form" component={Formvalidation} />
+                        <Route path="/tabs" component={Tabsactive} />
+                        <Route path="/star" component={Starts}/>
                     </Switch>
                 </Router>
             </div>

@@ -76,9 +76,9 @@ function GetData(props) {
             .catch((err) => {
                 console.log(err);
             });
-        var newstudenst=shows.filter((item)=>{
-            return item.id!==id;
-        })
+        var newstudenst = shows.filter((item) => {
+            return item.id !== id;
+        });
         SetShow(newstudenst);
     };
 

@@ -2,7 +2,6 @@ import {
     ERROR_LOADING_USER_DATA_GET,
     GET_LOADING_USER_DATA_GET,
     Received_USER_DATA_GET,
-
 } from "../types";
 
 const initialState = {

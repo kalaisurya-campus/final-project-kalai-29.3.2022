@@ -18,8 +18,7 @@ function Home(props) {
     console.log("received error", state.users.error);
     return (
         <div>
-
-<div className="loading data">
+            <div className="loading data">
                 {state.users.loading ? (
                     <div>Loading.....</div>
                 ) : (
@@ -46,7 +45,6 @@ function Home(props) {
             {Data.map((items, index) => {
                 return <Postcards post={items} key={index} />;
             })}
-
         </div>
     );
 }

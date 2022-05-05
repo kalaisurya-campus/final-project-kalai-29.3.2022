@@ -7,7 +7,7 @@ import { PUT_USER_DATA } from "../api/PUT";
 function Views() {
     const { id } = useParams();
     console.log("receid", id);
-const history=useHistory();
+    const history = useHistory();
     const [viewedit, SetViewEdit] = useState({
         view: "",
         body: "",

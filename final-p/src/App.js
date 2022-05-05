@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 
 import "./App.scss";
+import CommonData from "./components/CRUD/CommonData.js";
+
 import Formvalidation from "./components/Formvalidation";
 import Home from "./components/Home";
 import KalaiPost from "./components/KalaiPost";
@@ -48,6 +50,7 @@ function App() {
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home} />
+
                         <Route
                             path="/login"
                             render={() =>
@@ -64,7 +67,8 @@ function App() {
                         />
                         <Route path="/form" component={Formvalidation} />
                         <Route path="/tabs" component={Tabsactive} />
-                        <Route path="/star" component={Starts}/>
+                        <Route path="/star" component={Starts} />
+                        <Route path="/crud" component={CommonData} />
                     </Switch>
                 </Router>
             </div>

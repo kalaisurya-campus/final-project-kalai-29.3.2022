@@ -7,12 +7,16 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import DataProvidersMainData from "./contextapi/DataProviderApis";
 import MainsNoteDatas from "./contextapi/MainsNoteDatas";
+import { Provider } from "react-redux";
+import store from "./redux/store/Stores";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+        <Provider store={store}>
         <MainsNoteDatas>
             <App />
         </MainsNoteDatas>
+        </Provider>
     </React.StrictMode>
 );
 
